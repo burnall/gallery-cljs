@@ -1,14 +1,21 @@
 (ns gallery.main
-  (:require [reagent.core :as reagent])
+  (:require [reagent.core :as r])
   (:require [reagent.dom :as reagentDom])
 
   )
 
-(defn app [] [:h1 "Gallery"])
+(defn galleryPage[] )
+
+(defn app [] 
+  [:main.container.mx-auto.pt-5
+   [:p "Gallery"]
+   [:p "Hey"]])
+
+
 
 (defn mount! []
   (reagentDom/render [app]
-                  (.getElementById js/document "app")))
+                     (.getElementById js/document "app")))
 
 (defn main! []
   (mount!))

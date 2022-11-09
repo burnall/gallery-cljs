@@ -1,4 +1,10 @@
 .shadow-cljs/
+.calva/
+.clj-kondo/
+.cpcache/
+.lsp/
 node_modules/
 public/compiledjs/
+public/css/compiled.css
 package-lock.json
+*.log
